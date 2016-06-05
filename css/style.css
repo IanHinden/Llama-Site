@@ -1,0 +1,76 @@
+body {
+	background-color: lightblue;
+}
+
+h1 {
+	color: navy;
+	text-align: center;
+}
+
+h2 {
+	color: red;
+	text-align: center;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	line-height: 60px;
+	height: 130px;
+	background: #335c7D;
+	color: #fff;
+	font-family: 'PT Sans', sans-serif;
+	transition: all 0.4s ease;
+}
+
+header.sticky {
+	font-size: 12px;
+	line-height: 30px;
+	height: 60px;
+	background: #efc47d;
+	padding-left: 0px;
+}
+
+#hoverllama {
+	text-align:center;
+}
+
+img {
+	width: 50%;
+	height: auto;
+}
+
+#eyephoto {
+	text-align:center;
+}
+
+#cycler {
+	position:relative;
+}
+
+#cycler img{
+	position:absolute;
+	z-index:1;
+	height:auto;
+}
+
+#cycler img.active{
+	z-index:2
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-color: black;
+    }
+    
+    header{
+    	font-size: 15px;
+    	height: 100px;
+    }
+    
+    header.sticky{
+    	font-size: 15px;
+    }
+}
